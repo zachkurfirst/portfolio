@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <main className="container">
+      <main className="main-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

@@ -14,17 +14,18 @@
   color: white;
 }
 
-.nav {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav > a {
+.Header a {
   color: white;
   display: flex;
   justify-content: flex-end;
 }
 
-.nav > div {
-  margin-right: auto;
+.nav {
+  display: flex;
+  gap: 1rem;
 }
+
+
+/* .nav > div {
+  margin-right: auto;
+} */

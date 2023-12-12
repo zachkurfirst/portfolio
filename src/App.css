@@ -9,3 +9,7 @@ body {
   margin: 0;
   border: 2px solid blue;
 }
+
+.main-container {
+  margin: 2rem 0;
+}

@@ -1,12 +1,14 @@
 [
   {
     "name": "SIMON: NYC",
+    "description": "Test your memory with a NYC-inspired twist on the classic short-term memory game, where players must match the computer's sequence of choices.",
     "live": "https://zachkurfirst.github.io/project-1-simon-nyc/",
     "git": "https://github.com/zachkurfirst/project-1-simon-nyc",
     "image": "./assets/projects-simon-nyc.png"
   },
   {
     "name": "BeatBuddy",
+    "description": "Immerse yourself in the art of music curation as you effortlessly craft and discover playlists that resonate with your soul using BeatBuddy.",
     "live": "https://beatbuddy-7a9e4cc3fd5d.herokuapp.com/",
     "git": "https://github.com/connorgunter/music-playlist-app",
     "image": "./assets/projects-beatbuddy.png"

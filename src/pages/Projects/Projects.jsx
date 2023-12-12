@@ -29,6 +29,7 @@ const Projects = (props) => {
             <div key={idx} className="card">
               <img src={project.image} alt={project.name} />
               <h2>{project.name}</h2>
+              <p>{project.description}</p>
               <div className="btns-container">
                 <a
                   href={project.live}
