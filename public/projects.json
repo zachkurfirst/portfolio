@@ -1,14 +1,14 @@
 [
   {
-    "name": "project1",
-    "live": "https://app.herokuapp.com/whatever",
-    "git": "http://www.github.com/username/reponame",
-    "image": "http://www.imgur.com/pictureofproject.png"
+    "name": "SIMON: NYC",
+    "live": "https://zachkurfirst.github.io/project-1-simon-nyc/",
+    "git": "https://github.com/zachkurfirst/project-1-simon-nyc",
+    "image": "https://placekitten.com/800/450"
   },
   {
-    "name": "project2",
-    "live": "https://app.netlify.app/whatever",
-    "git": "http://www.github.com/username/reponame",
-    "image": "http://www.imgur.com/pictureofproject.png"
+    "name": "BeatBuddy",
+    "live": "https://beatbuddy-7a9e4cc3fd5d.herokuapp.com/",
+    "git": "https://github.com/connorgunter/music-playlist-app",
+    "image": "https://placekitten.com/800/450"
   }
 ]

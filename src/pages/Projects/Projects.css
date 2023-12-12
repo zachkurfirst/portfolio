@@ -1,0 +1,17 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card > img {
+  max-width: 400px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+}

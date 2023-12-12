@@ -22,6 +22,7 @@ const About = (props) => {
 
   // make initial call for data so it only happens once on component load
   useEffect(() => {
+    // console.log("use effect");
     getAboutData();
     // empty dependency array - run once - after initial render
   }, []);
