@@ -2,17 +2,29 @@
   font-size: 16px;
 }
 
-.nav {
+.Header {
   display: flex;
-  justify-content: space-evenly;
-  margin: auto;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.5rem;
-  gap: 1rem;
   padding: 10px;
   text-transform: uppercase;
   background-color: black;
+  width: 100%;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
 }
 
 .nav > a {
   color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav > div {
+  margin-right: auto;
 }
