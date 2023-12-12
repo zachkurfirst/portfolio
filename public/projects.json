@@ -3,12 +3,12 @@
     "name": "SIMON: NYC",
     "live": "https://zachkurfirst.github.io/project-1-simon-nyc/",
     "git": "https://github.com/zachkurfirst/project-1-simon-nyc",
-    "image": "../src/assets/projects-simon-nyc.png"
+    "image": "./assets/projects-simon-nyc.png"
   },
   {
     "name": "BeatBuddy",
     "live": "https://beatbuddy-7a9e4cc3fd5d.herokuapp.com/",
     "git": "https://github.com/connorgunter/music-playlist-app",
-    "image": "../src/assets/projects-beatbuddy.png"
+    "image": "./assets/projects-beatbuddy.png"
   }
 ]
