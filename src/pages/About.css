@@ -1,0 +1,12 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+img {
+  align-self: center;
+  max-width: 200px;
+  border-radius: 50%;
+}
