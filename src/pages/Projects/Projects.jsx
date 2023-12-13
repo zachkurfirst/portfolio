@@ -22,31 +22,38 @@ const Projects = (props) => {
   }, []);
 
   return (
-    projects && (
-      <div className="Projects">
-        {projects.map((project, idx) => {
-          return (
-            <div key={idx} className="card">
-              <img src={project.image} alt={project.name} />
-              <h2>{project.name}</h2>
-              <p>{project.description}</p>
-              <div className="btns-container">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button>Visit app</button>
-                </a>
-                <a href={project.git} target="_blank" rel="noopener noreferrer">
-                  <button>View repo</button>
-                </a>
+    <div>
+      <h1>Projects</h1>
+      {projects && (
+        <div className="Projects">
+          {projects.map((project, idx) => {
+            return (
+              <div key={idx} className="card">
+                <img src={project.image} alt={project.name} />
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+                <div className="btns-container">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>Visit app</button>
+                  </a>
+                  <a
+                    href={project.git}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>View repo</button>
+                  </a>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    )
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 };
 
