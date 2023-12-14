@@ -39,13 +39,16 @@ const About = (props) => {
   // return about ? loaded() : <p>Loading...</p>;
 
   return (
-    <section id="about">
+    <section id="about" className="mt-4">
+      <h1 className="text-4xl font-bold text-center mb-8">About Me</h1>
       {about && (
-        <div className="About">
-          <img src={about.headshot} alt={about.name} />
-          <h2>{about.name}</h2>
-          <h3>{about.email}</h3>
+        <div className="flex justify-center mt-4">
+          <img src={about.headshot} alt={about.name} className="rounded-full max-w-xs"/>
+          <div className="flex flex-col">
+          {/* <h2>{about.name}</h2>
+          <h3>{about.email}</h3> */}
           <p>{about.bio}</p>
+        </div>
         </div>
       )}
     </section>

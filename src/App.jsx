@@ -8,15 +8,17 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
 import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <main className="flex flex-col my-8 min-h-screen">
+      <main className="flex flex-col min-h-screen bg-gradient-to-tr from-sky-200 to-sky-300">
         <Home />
         <About />
         <Projects />
+        <Contact />
       </main>
       <Footer />
     </div>

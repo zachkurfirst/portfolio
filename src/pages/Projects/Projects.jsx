@@ -22,7 +22,7 @@ const Projects = (props) => {
   }, []);
 
   return (
-    <>
+    <section id="projects" className="mt-60">
       <h1 className="text-4xl font-bold text-center mb-8">Projects</h1>
       {projects && (
         <div className="flex justify-center flex-wrap gap-5">
@@ -61,7 +61,7 @@ const Projects = (props) => {
           })}
         </div>
       )}
-    </>
+    </section>
   );
 };
 

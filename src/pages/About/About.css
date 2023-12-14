@@ -1,7 +1,5 @@
 .About {
-  /* border: 2px solid pink; */
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-top: 2rem;
 }

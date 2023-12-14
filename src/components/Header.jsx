@@ -1,14 +1,21 @@
-import { Link } from "react-router-dom";
-// import { Link } from "react-scroll";
 import "./Header.css";
 
 const Header = (props) => {
   return (
-    <header className="Header">
-      <a href="#">Zach Kurfirst</a>
-      <nav className="nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+    <header className="flex justify-between text-xl py-4 bg-sky-800 text-slate-100 uppercase fixed top-0 left-0 right-0">
+      <a href="#" className="pl-6 hover:underline underline-offset-8">
+        Zach Kurfirst
+      </a>
+      <nav className="flex">
+        <a href="#projects" className="hover:underline underline-offset-8 mr-6">
+          Projects
+        </a>
+        <a href="#about" className="hover:underline underline-offset-8 mr-6">
+          About
+        </a>
+        <a href="#contact" className="hover:underline underline-offset-8 mr-6">
+          Contact
+        </a>
       </nav>
     </header>
   );
