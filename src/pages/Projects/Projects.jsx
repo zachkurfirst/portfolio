@@ -39,14 +39,14 @@ const Projects = (props) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-12 mr-4">Visit app</button>
+                    <button className="btn-primary mr-4">Visit app</button>
                   </a>
                   <a
                     href={project.git}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="px-12">View repo</button>
+                    <button className="btn-secondary">View repo</button>
                   </a>
                 </div>
                 </div>
