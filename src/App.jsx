@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <main className="main-container">
+      <main className="flex justify-center my-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
