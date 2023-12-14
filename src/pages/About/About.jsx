@@ -39,14 +39,16 @@ const About = (props) => {
   // return about ? loaded() : <p>Loading...</p>;
 
   return (
-    about && (
-      <div className="About">
-        <img src={about.headshot} alt={about.name} />
-        <h2>{about.name}</h2>
-        <h3>{about.email}</h3>
-        <p>{about.bio}</p>
-      </div>
-    )
+    <section id="about">
+      {about && (
+        <div className="About">
+          <img src={about.headshot} alt={about.name} />
+          <h2>{about.name}</h2>
+          <h3>{about.email}</h3>
+          <p>{about.bio}</p>
+        </div>
+      )}
+    </section>
   );
 };
 
