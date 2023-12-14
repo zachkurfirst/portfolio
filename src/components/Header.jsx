@@ -5,10 +5,10 @@ import "./Header.css";
 const Header = (props) => {
   return (
     <header className="Header">
-      <Link to="">Zach Kurfirst</Link>
+      <a href="#">Zach Kurfirst</a>
       <nav className="nav">
-        <Link to="#projects">Projects</Link>
-        <Link to="#about">About</Link>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
       </nav>
     </header>
   );
