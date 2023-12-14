@@ -1,6 +1,6 @@
 const Home = (props) => {
   return (
-    <div className="min-h-screen">
+    <section id="hero" className="">
       <h1 className="text-4xl font-bold text-center mb-4">
         Hello there! Welcome to my portfolio.
       </h1>
@@ -8,7 +8,7 @@ const Home = (props) => {
         My name is Zach Kurfirst, and I'm a software engineer living in New York
         City.
       </p>
-    </div>
+    </section>
   );
 };
 
