@@ -3,13 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  button {
+@layer components {
+  .btn {
     @apply rounded-lg px-8 py-2 text-base font-medium;
   }
-}
-
-@layer components {
   .btn-primary {
     @apply bg-sky-700 hover:bg-sky-800 text-sky-50;
   }
