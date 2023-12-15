@@ -20,4 +20,6 @@ I'm currently rounding out week 8 of a 12 work, immersive bootcamp at General As
 - Improve anchor menu accuracy
 - Add skills section (frontend and backend)
 - Mobile responsiveness (especially nav bar)
-- More info
+- More info to about section to give it more personality
+- Hero section needs a little more - maybe a background image?
+- More projects coming soon!
