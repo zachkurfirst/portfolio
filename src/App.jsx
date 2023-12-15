@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <main className="flex flex-col min-h-screen bg-gradient-to-tr from-sky-200 to-sky-300">
+      <main className="flex flex-col min-h-screen bg-gradient-to-tr from-sky-300 to-sky-400 dark:bg-gradient-to-tr dark:from-sky-900 dark:to-sky-950">
         <Home />
         <About />
         <Projects />

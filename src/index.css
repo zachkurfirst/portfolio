@@ -4,47 +4,47 @@
 @tailwind utilities;
 
 @layer components {
+  /* standard button */
   .btn {
     @apply rounded-lg px-8 py-2 text-base font-medium;
   }
+  /* large button */
+  .btn-lg {
+    @apply rounded-lg px-12 py-4 text-xl font-bold;
+  }
+  /* primary button */
   .btn-primary {
     @apply bg-sky-700 hover:bg-sky-800 text-sky-50;
   }
+  /* secondary button */
   .btn-secondary {
     @apply bg-sky-200 hover:bg-sky-300 text-sky-900;
   }
-
-  .btn-lg {
-    @apply rounded-lg px-12 py-4 text-xl font-bold
-  }
-
 }
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: light dark;
-  color: #ffffffde;
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  /* background-color: #242424; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
   a:hover {
-    /* color: #747bff; */
-    /* text-decoration: underline; */
-  }
+    color: #747bff;
+    text-decoration: underline;
+  } */
 
   /* button {
     background-color: #f9f9f9;
   } */
-}
 
 /* a {
   font-weight: 500;

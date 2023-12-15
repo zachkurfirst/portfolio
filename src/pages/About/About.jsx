@@ -12,7 +12,7 @@ const About = (props) => {
       const response = await fetch("./about.json");
       // convert response -> JSON
       const data = await response.json();
-      // console.log("data:", data);
+      console.log("data:", data);
       // set about state to API data
       setAbout(data);
     } catch (err) {
@@ -27,28 +27,19 @@ const About = (props) => {
     // empty dependency array - run once - after initial render
   }, []);
 
-  // const loaded = () => (
-  //   <div>
-  //     <img src={about.headshot} alt={about.name} />
-  //     <h2>{about.name}</h2>
-  //     <h3>{about.email}</h3>
-  //     <p>{about.bio}</p>
-  //   </div>
-  // );
-
-  // return about ? loaded() : <p>Loading...</p>;
-
   return (
-    <section id="about" className="mt-4">
-      <h1 className="text-4xl font-bold text-center mb-8">About Me</h1>
+    <section id="about" className="text-slate-900 dark:text-slate-100">
+      <h1 className="text-4xl font-bold text-center mb-4">About Me</h1>
       {about && (
-        <div className="flex justify-center mt-4">
-          <img src={about.headshot} alt={about.name} className="rounded-full max-w-xs"/>
-          <div className="flex flex-col">
-          {/* <h2>{about.name}</h2>
-          <h3>{about.email}</h3> */}
-          <p>{about.bio}</p>
-        </div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <img
+            src={about.headshot}
+            alt={about.name}
+            className="rounded-full max-w-xs"
+          />
+          {/* <div className=""> */}
+          <p className="text-lg max-w-lg mt-2.5">{about.bio}</p>
+          {/* </div> */}
         </div>
       )}
     </section>

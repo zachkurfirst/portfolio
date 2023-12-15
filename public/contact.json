@@ -1,0 +1,12 @@
+[
+  {
+    "name": "GitHub",
+    "image": "./assets/contact-github.png",
+    "link": "https://github.com/zachkurfirst"
+  },
+  {
+    "name": "LinkedIn",
+    "image": "./assets/contact-linkedin.png",
+    "link": "https://www.linkedin.com/in/zachary-kurfirst/"
+  }
+]

@@ -22,10 +22,12 @@ const Projects = (props) => {
   }, []);
 
   return (
-    <section id="projects" className="mt-60">
-      <h1 className="text-4xl font-bold text-center mb-8">Projects</h1>
+    <section id="projects" className="mt-20">
+      <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-100 text-center mb-8">
+        Projects
+      </h1>
       {projects && (
-        <div className="flex justify-center flex-wrap gap-5">
+        <div className="flex flex-wrap justify-center gap-5">
           {projects.map((project, idx) => {
             return (
               <div key={idx} className="flex flex-col max-w-md pb-8">
@@ -35,8 +37,12 @@ const Projects = (props) => {
                   className="rounded-t-lg"
                 />
                 <div className="border-l border-r border-b rounded-b-lg p-4 shadow-xl">
-                  <h2 className="text-2xl font-bold mb-2">{project.name}</h2>
-                  <p className="mb-4">{project.description}</p>
+                  <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">
+                    {project.name}
+                  </h2>
+                  <p className="text-slate-900 dark:text-slate-100 mb-4">
+                    {project.description}
+                  </p>
                   <div className="mb-2">
                     <a
                       href={project.live}
