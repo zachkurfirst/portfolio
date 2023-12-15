@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./About.css";
 
 const About = (props) => {
   // create state to hold About data

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./Projects.css";
 
 const Projects = (props) => {
   // Projects is an array, create state and set useState to empty array
@@ -30,7 +29,7 @@ const Projects = (props) => {
         <div className="flex flex-wrap justify-center gap-5">
           {projects.map((project, idx) => {
             return (
-              <div key={idx} className="flex flex-col max-w-md pb-8">
+              <div key={idx} className="flex flex-col max-w-md pb-8 px-4">
                 <img
                   src={project.image}
                   alt={project.name}
