@@ -23,7 +23,7 @@ const Projects = (props) => {
 
   return (
     <section id="projects" className="mt-20">
-      <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-100 text-center mb-8">
+      <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 text-center mb-8">
         Projects
       </h1>
       {projects && (
