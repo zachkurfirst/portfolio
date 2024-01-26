@@ -20,8 +20,8 @@ const Contact = (props) => {
   }, []);
 
   return (
-    <section id="contact" className="flex flex-col my-24 text-center">
-      <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+    <section id="contact" className="flex flex-col text-center">
+      <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 mt-24 mb-4">
         Get in Touch
       </h1>
       <h2 className="text-2xl text-slate-900 dark:text-slate-100 mb-6">
@@ -46,7 +46,7 @@ const Contact = (props) => {
           })}
         </div>
       )}
-      <div className="flex justify-center">
+      <div id="contact-buttons" className="flex justify-center mb-24">
         <a href="mailto:zachmk11@gmail.com" className="btn-lg btn-primary mr-4">
           Email Me!
         </a>

@@ -1,10 +1,17 @@
 [
   {
-    "name": "SIMON: NYC",
-    "description": "Test your memory with a NYC-inspired twist on the classic short-term memory game, where players must match the computer's sequence of choices.",
-    "live": "https://zachkurfirst.github.io/project-1-simon-nyc/",
-    "git": "https://github.com/zachkurfirst/project-1-simon-nyc",
-    "image": "./assets/projects-simon-nyc.png"
+    "name": "Dunk Dynasty",
+    "description": "Forge your own fictional NBA franchise, build a roster of your favorite players and establish the next NBA dynasty!",
+    "live": "https://dunkdynasty-7001c09430f6.herokuapp.com/",
+    "git": "https://github.com/zachkurfirst/dunk-dynasty",
+    "image": "./assets/projects-dunk-dynasty.png"
+  },
+  {
+    "name": "Journey Craft",
+    "description": "Streamline your next getaway by creating a trip, searching from a selection of locations, and queue up a schedule of fun-filled activities.",
+    "live": "https://journeycraft.netlify.app/",
+    "git": "https://github.com/bsong1124/trip-planner-client",
+    "image": "./assets/projects-journey-craft.png"
   },
   {
     "name": "BeatBuddy",
@@ -12,5 +19,12 @@
     "live": "https://beatbuddy-7a9e4cc3fd5d.herokuapp.com/",
     "git": "https://github.com/connorgunter/music-playlist-app",
     "image": "./assets/projects-beatbuddy.png"
+  },
+  {
+    "name": "SIMON: NYC",
+    "description": "Test your memory with a NYC-inspired twist on the classic short-term memory game, where players must match the computer's sequence of choices.",
+    "live": "https://zachkurfirst.github.io/project-1-simon-nyc/",
+    "git": "https://github.com/zachkurfirst/project-1-simon-nyc",
+    "image": "./assets/projects-simon-nyc.png"
   }
 ]

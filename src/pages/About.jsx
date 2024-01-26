@@ -28,7 +28,7 @@ const About = (props) => {
 
   return (
     <section id="about" className="text-slate-900 dark:text-slate-100">
-      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4">About Me</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-center mt-24 mb-4">About Me</h1>
       {about && (
         <div className="flex flex-wrap justify-center gap-8">
           <img
