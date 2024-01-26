@@ -51,7 +51,7 @@ const Contact = (props) => {
           Email Me!
         </a>
         <a
-          href="https://drive.google.com/file/d/1btmdktgQI6vYYQKe2aAPI2owzihdD0Ng/view?usp=sharing"
+          href="https://drive.google.com/file/d/1l0w8Zk-aY3DOdd1tUJ2-c590OSaGJ7Fa/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-lg btn-secondary"
