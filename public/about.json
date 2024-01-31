@@ -2,5 +2,7 @@
   "name": "Zach Kurfirst",
   "email": "zachmk11@gmail.com",
   "headshot": "./assets/about-headshot.jpg",
-  "bio": "Hi! I'm a technical marketer-turned software engineer living in New York City! I recently graduated from General Assembly's Software Engineering Immerseive Bootcamp. I'm excited to merge my marketing expertise with my technical skills as I pivot into the world of software engineering!"
+  "bio": "Hi, I'm Zach - a technical marketer-turned software engineer living in New York City! I recently graduated from General Assembly's Software Engineering Immerseive program, where I learned a diverse range of programming languages and frameworks, including JavaScript, Python, React, Express, and Django. I created four projects along the way, each of which you can check out below!",
+  "background": "In my previous roles, I spearheaded the implementation of CRM and marketing automation platforms, oversaw the development of websites, mobile applications, and drove customer engagement via personalized email marketing campaigns.",
+  "wrap": "I'm excited to now merge my marketing expertise with my newfound technical skillset as I navigate the dynamic realm of software engineering!"
 }
