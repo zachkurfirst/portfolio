@@ -29,13 +29,13 @@ const About = (props) => {
   return (
     <section id="about" className="text-slate-900 dark:text-slate-100">
       {about && (
-        <div className="flex flex-wrap justify-center gap-8 ml-6 mr-4 sm:mr-6">
+        <div className="flex flex-wrap justify-center gap-8">
           <img
             src={about.headshot}
             alt={about.name}
-            className="rounded-full max-w-xs sm:max-w-sm max-h-80 mt-14"
+            className="rounded-full max-w-xs sm:max-w-sm max-h-80 lg:mt-14"
           />
-          <div id="about-text">
+          <div id="about-text" className="ml-6 mr-4 sm:mr-6">
             <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-4">About Me</h1>
             <p className="lg:max-w-lg mt-4">{about.bio}</p>
             <p className="lg:max-w-lg mt-4">{about.background}</p>
