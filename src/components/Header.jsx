@@ -5,11 +5,14 @@ const Header = (props) => {
         Zach Kurfirst
       </a>
       <nav className="flex">
-        <a href="#projects" className="hover:underline underline-offset-8 mr-2 sm:mr-6">
-          Projects
-        </a>
         <a href="#about" className="hover:underline underline-offset-8 mr-2 sm:mr-6">
           About
+        </a>
+        <a href="#skills" className="hover:underline underline-offset-8 mr-2 sm:mr-6">
+          Skills
+        </a>
+        <a href="#projects" className="hover:underline underline-offset-8 mr-2 sm:mr-6">
+          Projects
         </a>
         <a href="#contact" className="hover:underline underline-offset-8 mr-4 sm:mr-6">
           Contact
