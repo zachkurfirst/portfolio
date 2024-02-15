@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <main className="mx-auto h-dvh flex flex-col md:max-w-screen-lg">
         <Home />
         <About />
+        <Skills />
         <Projects />
         <Contact />
       </main>
