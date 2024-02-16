@@ -25,7 +25,7 @@ const Contact = (props) => {
 
   return (
     <section id="contact" className="flex flex-col text-center">
-      <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 mt-24 mb-4">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mt-24 mb-4">
       <FontAwesomeIcon icon={faComments} className="mr-2"/>Get in Touch
       </h1>
       <h2 className="text-2xl text-slate-900 dark:text-slate-100 mb-6">

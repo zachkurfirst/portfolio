@@ -26,7 +26,7 @@ const Projects = (props) => {
 
   return (
     <section id="projects" className="mx-6">
-      <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 text-center mt-24 mb-8">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 text-center mt-24 mb-8">
       <FontAwesomeIcon icon={faDiagramProject} className="mr-2"/>Projects
       </h1>
       {projects && (

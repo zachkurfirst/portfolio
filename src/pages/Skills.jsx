@@ -5,13 +5,13 @@ import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 const Skills = (props) => {
   return (
     <section id="skills" className="flex flex-col items-center mx-6">
-        <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 text-center mt-24 mb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 text-center mt-24 mb-4">
         <FontAwesomeIcon icon={faToolbox} className="mr-2"/>Skills
         </h2>
       <div id="skills-container" className="border-2 rounded bg-sky-800 text-sky-100 p-10">
         <div id="languages-section">
-          <h3 className="text-2xl font-semibold mb-4">Languages</h3>
-          <div id="languages-list" className="flex flex-wrap gap-8 lg:gap-16">
+          <h3 className="text-2xl font-semibold text-center mb-4">Languages</h3>
+          <div id="languages-list" className="flex flex-wrap justify-center gap-8 lg:gap-16">
             <div id="javascript" className="flex flex-col items-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript icon"
@@ -50,10 +50,10 @@ const Skills = (props) => {
           </div>
         </div>
         <div id="libraries-frameworks-section" className="mt-10">
-          <h3 className="text-2xl font-semibold mb-4">
+          <h3 className="text-2xl font-semibold text-center mb-4">
             Libraries & Frameworks
           </h3>
-          <div id="libraries-frameworks-list" className="flex flex-wrap gap-8 lg:gap-16">
+          <div id="libraries-frameworks-list" className="flex flex-wrap justify-center gap-8 lg:gap-16">
             <div id="react" className="flex flex-col items-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React icon"
@@ -92,10 +92,10 @@ const Skills = (props) => {
           </div>
         </div>
         <div id="databases-other-section" className="mt-10">
-          <h3 className="text-2xl font-semibold mb-4">
+          <h3 className="text-2xl font-semibold text-center mb-4">
             Databases & Other
           </h3>
-          <div id="databases-other-list" className="flex flex-wrap gap-8 lg:gap-16">
+          <div id="databases-other-list" className="flex flex-wrap justify-center gap-8 lg:gap-16">
             <div id="mongodb" className="flex flex-col items-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB icon"

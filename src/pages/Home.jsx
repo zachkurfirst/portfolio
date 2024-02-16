@@ -1,7 +1,7 @@
 const Home = (props) => {
   return (
     <section id="hero" className="flex flex-col my-32 sm:mt-44 mb-20 text-center">
-      <h1 className="text-3xl sm:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-4">
         Hello there!
       </h1>
       <h2 className="text-xl sm:text-2xl mx-6 text-slate-900 dark:text-slate-100 mb-6">
