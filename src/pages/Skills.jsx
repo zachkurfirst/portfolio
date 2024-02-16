@@ -1,8 +1,12 @@
+// Font Awesome icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faToolbox } from "@fortawesome/free-solid-svg-icons";
+
 const Skills = (props) => {
   return (
     <section id="skills" className="flex flex-col items-center mx-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 text-center mt-24 mb-4">
-          Skills
+        <FontAwesomeIcon icon={faToolbox} className="mr-2"/>Skills
         </h2>
       <div id="skills-container" className="border-2 rounded bg-sky-800 text-sky-100 p-10">
         <div id="languages-section">

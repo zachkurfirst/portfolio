@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+// Font Awesome icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
+
 const About = (props) => {
   // create state to hold About data
   const [about, setAbout] = useState(null);
@@ -36,7 +40,7 @@ const About = (props) => {
             className="rounded-full max-w-xs sm:max-w-sm max-h-64 lg:max-h-80 mt-24 lg:mt-44 ml-4"
           />
           <div id="about-text" className="ml-6 mr-4 sm:mr-6 sm:max-w-lg">
-            <h1 className="text-3xl sm:text-4xl font-bold lg:mt-24 mb-6 sm:mb-4">About Me</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold lg:mt-24 mb-6 sm:mb-4"><FontAwesomeIcon icon={faAddressCard} className="mr-2"/>About Me</h1>
             <p className="lg:max-w-lg mt-4">{about.bio}</p>
             <p className="lg:max-w-lg mt-4">{about.background}</p>
             <p className="lg:max-w-lg mt-4">{about.wrap}</p>

@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+// Font Awesome icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComments, faPaperPlane, faFileLines } from "@fortawesome/free-solid-svg-icons";
+
 const Contact = (props) => {
   const [contact, setContact] = useState([]);
 
@@ -22,7 +26,7 @@ const Contact = (props) => {
   return (
     <section id="contact" className="flex flex-col text-center">
       <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 mt-24 mb-4">
-        Get in Touch
+      <FontAwesomeIcon icon={faComments} className="mr-2"/>Get in Touch
       </h1>
       <h2 className="text-2xl text-slate-900 dark:text-slate-100 mb-6">
         Let's connect!
@@ -48,7 +52,8 @@ const Contact = (props) => {
       )}
       <div id="contact-buttons" className="flex justify-center mb-24">
         <a href="mailto:zachmk11@gmail.com" className="btn-lg btn-primary mr-4">
-          Email Me!
+          Email
+        <FontAwesomeIcon icon={faPaperPlane} className="ml-2"/>
         </a>
         <a
           href="https://drive.google.com/file/d/1l0w8Zk-aY3DOdd1tUJ2-c590OSaGJ7Fa/view?usp=sharing"
@@ -57,6 +62,7 @@ const Contact = (props) => {
           className="btn-lg btn-secondary"
         >
           Resume
+          <FontAwesomeIcon icon={faFileLines} className="ml-2"/>
         </a>
       </div>
     </section>

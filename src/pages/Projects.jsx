@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+// Font Awesome icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
+
 const Projects = (props) => {
   // Projects is an array, create state and set useState to empty array
   const [projects, setProjects] = useState([]);
@@ -23,7 +27,7 @@ const Projects = (props) => {
   return (
     <section id="projects" className="mx-6">
       <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 text-center mt-24 mb-8">
-        Projects
+      <FontAwesomeIcon icon={faDiagramProject} className="mr-2"/>Projects
       </h1>
       {projects && (
         <div id="projects-container" className="grid grid-cols-1 sm:grid-cols-2 gap-8">
