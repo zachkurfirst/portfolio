@@ -31,16 +31,16 @@ const About = (props) => {
   }, []);
 
   return (
-    <section id="about" className="text-slate-900 dark:text-slate-100">
+    <section id="about" className="text-sky-950 dark:text-sky-100">
       {about && (
         <div className="flex flex-wrap justify-center gap-8">
           <img
             src={about.headshot}
             alt={about.name}
-            className="rounded-full max-w-xs sm:max-w-sm max-h-48 md:max-h-80 sm:mt-16 ml-4"
+            className="rounded-full max-w-xs sm:max-w-sm max-h-48 md:max-h-80 max-[927px]:mt-24 min-[928px]:mt-36 ml-4"
           />
           <div id="about-text" className="ml-6 mr-4 sm:mr-6 sm:max-w-lg">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold max-[927px]:text-center mb-6 sm:mb-4"><FontAwesomeIcon icon={faAddressCard} className="mr-2"/>About Me</h1>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold max-[927px]:text-center min-[928px]:mt-24 mb-6 sm:mb-4"><FontAwesomeIcon icon={faAddressCard} className="mr-4"/>About Me</h2>
             <p className="md:max-w-lg mt-4">{about.bio}</p>
             <p className="md:max-w-lg mt-4">{about.background}</p>
             <p className="md:max-w-lg mt-4">{about.wrap}</p>

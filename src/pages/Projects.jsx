@@ -26,9 +26,9 @@ const Projects = (props) => {
 
   return (
     <section id="projects" className="mx-6">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 text-center mt-24 mb-8">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-sky-950 dark:text-sky-100 text-center mt-24 mb-8">
       <FontAwesomeIcon icon={faDiagramProject} className="mr-2"/>Projects
-      </h1>
+      </h2>
       {projects && (
         <div id="projects-container" className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {projects.map((project, idx) => {
@@ -40,10 +40,10 @@ const Projects = (props) => {
                   className="aspect-16/9 rounded-t-lg"
                 />
                 <div id="project-contents" className="flex flex-col justify-between border-l border-r border-b rounded-b-lg p-6 shadow-xl md:h-56 lg:h-52">
-                  <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+                  <h3 className="text-2xl font-bold text-sky-950 dark:text-sky-100">
                     {project.name}
-                  </h2>
-                  <p className="text-slate-900 dark:text-slate-100 mb-4">
+                  </h3>
+                  <p className="text-sky-950 dark:text-sky-100 mb-4">
                     {project.description}
                   </p>
                   <div id="button-container" className="mb-2">
