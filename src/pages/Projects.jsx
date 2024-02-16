@@ -51,7 +51,7 @@ const Projects = (props) => {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-primary mr-4"
+                      className="btn btn-primary px-4 md:px-6 mr-4"
                     >
                       Visit app
                     </a>
@@ -59,7 +59,7 @@ const Projects = (props) => {
                       href={project.git}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-secondary"
+                      className="btn btn-secondary px-4 md:px-6"
                     >
                       View repo
                     </a>

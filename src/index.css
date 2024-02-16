@@ -6,7 +6,7 @@
 @layer components {
   /* standard button */
   .btn {
-    @apply rounded-lg px-4 py-2 font-semibold cursor-pointer;
+    @apply rounded-lg px-6 py-2 font-semibold cursor-pointer;
   }
   /* large button */
   .btn-lg {

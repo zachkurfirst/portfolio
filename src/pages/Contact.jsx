@@ -35,7 +35,6 @@ const Contact = (props) => {
         <div className="flex flex-wrap justify-center items-center gap-5 mb-8">
           {contact.map((c, idx) => {
             return (
-              //   <div key={idx} className="w-56">
               <a
                 href={c.link}
                 target="_blank"
@@ -45,13 +44,12 @@ const Contact = (props) => {
               >
                 <img src={c.image} alt={c.name} />
               </a>
-              //   </div>
             );
           })}
         </div>
       )}
       <div id="contact-buttons" className="flex justify-center mb-24">
-        <a href="mailto:zachmk11@gmail.com" className="btn-lg btn-primary mr-4">
+        <a href="mailto:zachmk11@gmail.com" className="btn sm:btn-lg btn-primary mr-4">
           Email
         <FontAwesomeIcon icon={faPaperPlane} className="ml-2"/>
         </a>
@@ -59,7 +57,7 @@ const Contact = (props) => {
           href="https://drive.google.com/file/d/1l0w8Zk-aY3DOdd1tUJ2-c590OSaGJ7Fa/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-lg btn-secondary"
+          className="btn sm:btn-lg btn-secondary"
         >
           Resume
           <FontAwesomeIcon icon={faFileLines} className="ml-2"/>
@@ -70,12 +68,3 @@ const Contact = (props) => {
 };
 
 export default Contact;
-
-//   {/* <div className="flex justify-center">
-//     <a href="#projects" className="btn-lg btn-primary mr-4">
-//       Projects
-//     </a>
-//     <a href="#contact" className="btn-lg btn-secondary">
-//       Get in touch
-//     </a>
-//   </div> */}
