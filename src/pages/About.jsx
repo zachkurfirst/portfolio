@@ -33,17 +33,17 @@ const About = (props) => {
   return (
     <section id="about" className="text-sky-950 dark:text-sky-100">
       {about && (
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-col md:flex-row items-center md:justify-center gap-4 md:gap-8 mt-24">
           <img
             src={about.headshot}
             alt={about.name}
-            className="rounded-full max-w-xs sm:max-w-sm max-h-48 md:max-h-80 max-[927px]:mt-24 min-[928px]:mt-36 ml-4"
+            className="rounded-full object-cover w-1/3 h-1/3 md:self-center lg:self-end md:ml-4"
           />
-          <div id="about-text" className="ml-6 mr-4 sm:mr-6 sm:max-w-lg">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold max-[927px]:text-center min-[928px]:mt-24 mb-6 sm:mb-4"><FontAwesomeIcon icon={faAddressCard} className="mr-4"/>About Me</h2>
-            <p className="md:max-w-lg mt-4">{about.bio}</p>
-            <p className="md:max-w-lg mt-4">{about.background}</p>
-            <p className="md:max-w-lg mt-4">{about.wrap}</p>
+          <div id="about-text" className="mx-8 sm:mx-0 md:mr-6 lg:mr-0 max-w-lg">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center md:text-left mb-6 sm:mb-4"><FontAwesomeIcon icon={faAddressCard} className="mr-4"/>About Me</h2>
+            <p className="mt-4">{about.bio}</p>
+            <p className="mt-4">{about.background}</p>
+            <p className="mt-4">{about.wrap}</p>
           </div>
         </div>
       )}
