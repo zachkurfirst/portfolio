@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
+import { faDiagramProject, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = (props) => {
   // Projects is an array, create state and set useState to empty array
@@ -33,17 +33,17 @@ const Projects = (props) => {
         <div id="projects-container" className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {projects.map((project, idx) => {
             return (
-              <div id="project" key={idx} className="">
+              <div id="project" key={idx} className="rounded-lg overflow-hidden shadow-2xl">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="aspect-16/9 rounded-t-lg"
+                  className="aspect-16/9"
                 />
-                <div id="project-contents" className="flex flex-col justify-between border-l border-r border-b rounded-b-lg p-6 shadow-xl md:h-56 lg:h-52">
+                <div id="project-contents" className="pt-4 px-6 pb-10">
                   <h3 className="text-2xl font-bold text-sky-950 dark:text-sky-100">
                     {project.name}
                   </h3>
-                  <p className="text-sky-950 dark:text-sky-100 mb-4">
+                  <p className="text-sky-950 dark:text-sky-100 mt-2 mb-6">
                     {project.description}
                   </p>
                   <div id="button-container" className="mb-2">
@@ -53,7 +53,7 @@ const Projects = (props) => {
                       rel="noopener noreferrer"
                       className="btn btn-primary px-4 md:px-6 mr-4"
                     >
-                      Visit app
+                      Visit app<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
                     </a>
                     <a
                       href={project.git}
@@ -61,7 +61,7 @@ const Projects = (props) => {
                       rel="noopener noreferrer"
                       className="btn btn-secondary px-4 md:px-6"
                     >
-                      View repo
+                      View repo<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
                     </a>
                   </div>
                 </div>

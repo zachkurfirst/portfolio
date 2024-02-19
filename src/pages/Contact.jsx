@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComments, faPaperPlane, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { faComments, faEnvelope, faFileLines, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = (props) => {
   const [contact, setContact] = useState([]);
@@ -51,7 +52,7 @@ const Contact = (props) => {
       <div id="contact-buttons" className="flex justify-center mb-24">
         <a href="mailto:zachmk11@gmail.com" className="btn sm:btn-lg btn-primary mr-4">
           Email
-        <FontAwesomeIcon icon={faPaperPlane} className="ml-2"/>
+          <FontAwesomeIcon icon={faPaperPlane} className="ml-2"/>
         </a>
         <a
           href="https://drive.google.com/file/d/1l0w8Zk-aY3DOdd1tUJ2-c590OSaGJ7Fa/view?usp=sharing"
