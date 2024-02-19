@@ -1,6 +1,6 @@
 const Header = (props) => {
   return (
-    <header className="flex justify-between text-sm sm:text-xl py-4 bg-sky-800 dark:bg-sky-950 text-sky-100 dark:border-b dark:border-sky-100 uppercase fixed top-0 left-0 right-0">
+    <header className="flex justify-between text-sm sm:text-xl py-4 bg-sky-800 dark:bg-sky-950 text-sky-100 border-b border-sky-300 dark:border-b dark:border-sky-100 uppercase fixed top-0 left-0 right-0">
       <a href="#" className="hover:underline underline-offset-8 ml-4 sm:ml-6 hidden sm:inline">
         Zach Kurfirst
       </a>
