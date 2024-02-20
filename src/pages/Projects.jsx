@@ -33,7 +33,7 @@ const Projects = (props) => {
         <div id="projects-container" className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {projects.map((project, idx) => {
             return (
-              <div id="project" key={idx} className="rounded-lg overflow-hidden shadow-2xl">
+              <div id="project-card" key={idx} className="rounded-lg overflow-hidden shadow-2xl hover:-translate-y-2 duration-300 z-0">
                 <img
                   src={project.image}
                   alt={project.name}
