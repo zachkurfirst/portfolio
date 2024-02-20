@@ -46,7 +46,7 @@ const Projects = (props) => {
                   <p className="text-sky-950 dark:text-sky-100 mt-2 mb-6">
                     {project.description}
                   </p>
-                  <div id="button-container" className="mb-2">
+                  <div id="button-container" className="text-xs lg:text-base mb-2">
                     <a
                       href={project.live}
                       target="_blank"
