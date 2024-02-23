@@ -6,7 +6,7 @@ const Footer = (props) => {
   return (
     <footer className="flex items-center bg-sky-800 text-sky-100 py-6">
       <p className="text-center flex-1">© Zach Kurfirst. All Rights Reserved.</p>
-      <a href="#" className="mr-4 hover:ease-in"><FontAwesomeIcon icon={faCircleArrowUp} size="2x"/></a>
+      <a href="#" className="mr-4 hover:ease-in"><FontAwesomeIcon icon={faCircleArrowUp} size="2x" className="hover:text-sky-300"/></a>
     </footer>
   );
 };

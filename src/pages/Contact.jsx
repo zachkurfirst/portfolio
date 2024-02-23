@@ -34,9 +34,9 @@ const Contact = (props) => {
       </h3>
       {contact && (
         <div className="flex flex-wrap justify-center items-center gap-5 mb-8">
-          <a href="mailto:zachmk11@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} className="text-sky-950 hover:text-sky-700 transition-all" size="2xl"/></a>
-          <a href="https://github.com/zachkurfirst" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="text-sky-950 hover:text-sky-700 transition-all" size="2xl"/></a>
-          <a href="https://www.linkedin.com/in/zachary-kurfirst/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} className="text-sky-950 hover:text-sky-700 transition-all" size="2xl"/></a>
+          <a href="mailto:zachmk11@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} className="text-sky-950 dark:text-sky-100 hover:text-sky-700 dark:hover:text-sky-500 transition-all" size="2xl"/></a>
+          <a href="https://github.com/zachkurfirst" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="text-sky-950 dark:text-sky-100 hover:text-sky-700 dark:hover:text-sky-500 transition-all" size="2xl"/></a>
+          <a href="https://www.linkedin.com/in/zachary-kurfirst/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} className="text-sky-950 dark:text-sky-100 hover:text-sky-700 dark:hover:text-sky-500 transition-all" size="2xl"/></a>
           {/* {contact.map((c, idx) => {
             return (
               <a
