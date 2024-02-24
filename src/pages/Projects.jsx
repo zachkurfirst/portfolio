@@ -25,7 +25,7 @@ const Projects = (props) => {
   }, []);
 
   return (
-    <section id="projects" className="mx-6">
+    <section id="projects" className="md:max-w-screen-lg mx-6">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-sky-950 dark:text-sky-100 text-center mt-24 mb-8">
       <FontAwesomeIcon icon={faDiagramProject} className="mr-2"/>Projects
       </h2>

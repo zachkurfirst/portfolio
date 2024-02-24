@@ -25,7 +25,7 @@ const Contact = (props) => {
   }, []);
 
   return (
-    <section id="contact" className="flex flex-col text-center">
+    <section id="contact" className="flex flex-col items-center">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-sky-950 dark:text-sky-100 mt-24 mb-4">
       <FontAwesomeIcon icon={faComments} className="mr-2"/>Get in Touch
       </h2>
@@ -33,7 +33,7 @@ const Contact = (props) => {
         Let&rsquo;s connect!
       </h3>
       {contact && (
-        <div className="flex flex-wrap justify-center items-center gap-5 mb-8">
+        <div className="flex flex-wrap items-center gap-5 mb-8">
           <a href="mailto:zachmk11@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} className="text-sky-950 dark:text-sky-100 hover:text-sky-700 dark:hover:text-sky-500 transition-all" size="2xl"/></a>
           <a href="https://github.com/zachkurfirst" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="text-sky-950 dark:text-sky-100 hover:text-sky-700 dark:hover:text-sky-500 transition-all" size="2xl"/></a>
           <a href="https://www.linkedin.com/in/zachary-kurfirst/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} className="text-sky-950 dark:text-sky-100 hover:text-sky-700 dark:hover:text-sky-500 transition-all" size="2xl"/></a>
@@ -52,7 +52,6 @@ const Contact = (props) => {
           })} */}
         </div>
       )}
-      <div id="contact-buttons" className="flex justify-center mb-24">
         {/* <a href="mailto:zachmk11@gmail.com" className="btn sm:btn-lg btn-primary mr-4">
           Email
           <FontAwesomeIcon icon={faPaperPlane} className="ml-2"/>
@@ -61,11 +60,10 @@ const Contact = (props) => {
           href="https://drive.google.com/file/d/1l0w8Zk-aY3DOdd1tUJ2-c590OSaGJ7Fa/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn sm:btn-lg btn-secondary"
+          className="btn sm:btn-lg btn-primary mb-24"
         ><FontAwesomeIcon icon={faFileLines} className="mr-2"/>
           View Resume<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
         </a>
-      </div>
     </section>
   );
 };

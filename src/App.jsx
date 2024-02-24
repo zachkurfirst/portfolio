@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <main className="mx-auto h-dvh flex flex-col md:max-w-screen-lg">
+      <main className="flex flex-col items-center mx-auto h-dvh">
         <Home />
         <About />
         <Skills />
