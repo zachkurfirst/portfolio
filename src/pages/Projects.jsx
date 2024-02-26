@@ -51,7 +51,7 @@ const Projects = (props) => {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-primary px-4 md:px-6 mr-4"
+                      className="btn btn-primary px-4 md:px-6 mr-2 sm:mr-4"
                     >
                       Visit app<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
                     </a>

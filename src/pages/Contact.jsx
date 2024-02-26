@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComments, faEnvelope, faFileLines, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faComments, faEnvelope, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = (props) => {
@@ -60,9 +60,8 @@ const Contact = (props) => {
           href="https://drive.google.com/file/d/1l0w8Zk-aY3DOdd1tUJ2-c590OSaGJ7Fa/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn sm:btn-lg btn-primary mb-24"
-        ><FontAwesomeIcon icon={faFileLines} className="mr-2"/>
-          View Resume<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
+          className="btn-lg btn-primary mb-24"
+        >View Resume<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
         </a>
     </section>
   );
