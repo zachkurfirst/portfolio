@@ -1,6 +1,6 @@
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFlask, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faFlask, faComment } from "@fortawesome/free-solid-svg-icons";
 
 const Home = (props) => {
   return (
@@ -13,11 +13,12 @@ const Home = (props) => {
       </h2>
       <div className="flex justify-center">
         <a href="#projects" className="btn sm:btn-lg btn-primary mr-4">
-        {/* <FontAwesomeIcon icon={faFlask} className="mr-2"/> */}
+        <FontAwesomeIcon icon={faFlask} className="mr-2"/>
         Projects
-        <FontAwesomeIcon icon={faFlask} className="ml-2"/>
+        {/* <FontAwesomeIcon icon={faFlask} className="ml-2"/> */}
         </a>
         <a href="#contact" className="btn sm:btn-lg btn-secondary">
+        <FontAwesomeIcon icon={faComment} className="mr-2"/>
           Get in touch
         </a>
       </div>

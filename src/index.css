@@ -14,11 +14,11 @@
   }
   /* primary button */
   .btn-primary {
-    @apply bg-emerald-600 border border-emerald-600 hover:bg-sky-900 hover:border-sky-900 dark:hover:bg-sky-700 dark:hover:border-sky-700 text-sky-50;
+    @apply bg-emerald-600 border border-emerald-600 hover:bg-emerald-700 dark:hover:border-emerald-50 text-sky-50;
   }
   /* secondary button */
   .btn-secondary {
-    @apply bg-sky-200 border border-sky-900 hover:bg-sky-900 dark:border-sky-200 dark:hover:bg-sky-700 dark:hover:border-sky-700 text-sky-900 hover:text-sky-50;
+    @apply bg-sky-200 border border-sky-900 hover:bg-sky-900 dark:border-sky-200 dark:hover:bg-sky-800 dark:hover:border-sky-50 text-sky-900 hover:text-sky-50;
   }
   /* hero patterns - circuit board */
   .bg-circuit-board {

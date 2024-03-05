@@ -25,7 +25,7 @@ const HeaderMobile = () => {
     <div
       id="header-mobile"
       ref={ref}
-      className="flex justify-between items-center sm:hidden px-4 py-4"
+      className="flex justify-between items-center md:hidden p-4"
     >
       <a href="#" onClick={() => setOpen(false)}>
         <img src="assets/favicon-1.png" alt="icon" className="w-10" />
