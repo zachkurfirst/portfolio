@@ -11,13 +11,12 @@ const Home = (props) => {
       <h2 className="text-xl font-semibold sm:text-2xl max-w-screen-md mx-6 text-sky-950 dark:text-sky-100 mb-6">
         My name is Zach Kurfirst, and I&rsquo;m a full-stack software engineer. Welcome to my corner of the web.
       </h2>
-      <div className="flex justify-center">
-        <a href="#projects" className="btn sm:btn-lg btn-primary mr-4">
+      <div className="flex flex-col sm:flex-row justify-center gap-2 w-3/4 text-xl">
+        <a href="#projects" className="btn-lg btn-primary w-full sm:w-fit px-8">
         <FontAwesomeIcon icon={faFlask} className="mr-2"/>
         Projects
-        {/* <FontAwesomeIcon icon={faFlask} className="ml-2"/> */}
         </a>
-        <a href="#contact" className="btn sm:btn-lg btn-secondary">
+        <a href="#contact" className="btn-lg btn-secondary w-full sm:w-fit px-8">
         <FontAwesomeIcon icon={faComment} className="mr-2"/>
           Get in touch
         </a>
