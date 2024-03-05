@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Turn as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Routes from "./Routes";
+import Socials from "./Socials";
 
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,7 +18,6 @@ const HeaderMobile = () => {
 
   // close menu when user clicks outside
   useClickAway(ref, () => {
-    console.log("OUTSIDE CLICKED");
     setOpen(false);
   });
 
@@ -50,17 +50,17 @@ const HeaderMobile = () => {
         />
         <AnimatePresence>
           {isOpen && (
-            <motion.div
+            <motion.aside
               // start as invisible
               initial={{ opacity: 0 }}
               // fade-in: animate to full visible
               animate={{ opacity: 1 }}
               // fade-out
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-x-0 top-16 pt-4 pb-8 pl-8 bg-sky-800 dark:bg-sky-950 border-b border-sky-100 text-lg"
+              transition={{ duration: 0.4 }}
+              className="fixed inset-x-0 top-16 pt-4 pb-12 px-8 bg-sky-800 dark:bg-sky-950 border-b border-sky-100 text-lg divide-y divide-solid"
             >
-              <ul className="flex flex-col gap-4">
+              <ul id="site-links" className="flex flex-col gap-4 pb-6">
                 {Routes.map((route, idx) => {
                   return (
                     <motion.li
@@ -83,8 +83,22 @@ const HeaderMobile = () => {
                     </motion.li>
                   );
                 })}
+                </ul>
+                <div id="social-container" className="flex flex-col items-center pt-6">
+                <h3 className="mb-2">Let&rsquo;s Connect</h3>
+                <ul className="flex gap-6">
+                  {Socials.map((social) => {
+                    return (
+                      <li key={social.title}>
+                        <a href={social.href} target="_blank" rel="noopener noreferrer">
+                          {social.icon}
+                        </a>
+                      </li>
+                    )
+                  })}
               </ul>
-            </motion.div>
+              </div>
+            </motion.aside>
           )}
         </AnimatePresence>
       </div>
