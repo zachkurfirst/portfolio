@@ -21,6 +21,26 @@ const HeaderMobile = () => {
     setOpen(false);
   });
 
+  const listVariants = {
+    closed: {
+      transition: {
+        staggerChildren: 0.2,
+        staggerDirection: -1,
+      },
+    },
+    open: {
+      transition: {
+        staggerChildren: 0.2,
+        staggerDirection: 1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    closed: { opacity: 0 },
+    open: { opacity: 1 },
+  };
+
   return (
     <div
       id="header-mobile"
@@ -56,25 +76,32 @@ const HeaderMobile = () => {
               // fade-in: animate to full visible
               animate={{ opacity: 1 }}
               // fade-out
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.4 }}
-              className="fixed inset-x-0 top-16 pt-4 pb-12 px-8 bg-sky-800 dark:bg-sky-950 border-b border-sky-100 text-lg divide-y divide-solid"
+              exit={{ opacity: 0, transition: { duration: 0.4, delay: 0.9 } }}
+              className="fixed inset-x-0 top-16 pt-4 pb-12 px-7 bg-sky-800 dark:bg-sky-950 border-b border-sky-100 text-lg divide-y divide-solid"
             >
-              <ul id="site-links" className="flex flex-col gap-4 pb-6">
-                {Routes.map((route, idx) => {
+              <motion.ul
+                id="site-links"
+                className="flex flex-col gap-4 pb-6"
+                initial="closed"
+                animate="open"
+                exit="closed"
+                variants={listVariants}
+              >
+                {Routes.map((route) => {
                   return (
                     <motion.li
-                      initial={{ scale: 0, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 200,
-                        damping: 20,
-                        velocity: 10,
-                        delay: 0.1 + idx / 10,
-                      }}
+                      // initial={{ scale: 0, opacity: 0 }}
+                      // animate={{ scale: 1, opacity: 1 }}
+                      // transition={{
+                      //   type: "spring",
+                      //   stiffness: 200,
+                      //   damping: 20,
+                      //   velocity: 10,
+                      //   delay: 0.1 + idx / 10,
+                      // }}
                       key={route.title}
                       className="hover:underline underline-offset-8"
+                      variants={itemVariants}
                     >
                       <a href={route.href} onClick={() => setOpen(false)}>
                         {route.icon}
@@ -83,20 +110,27 @@ const HeaderMobile = () => {
                     </motion.li>
                   );
                 })}
-                </ul>
-                <div id="social-container" className="flex flex-col items-center pt-6">
+              </motion.ul>
+              <div
+                id="social-container"
+                className="flex flex-col items-center pt-6"
+              >
                 <h3 className="mb-2">Let&rsquo;s Connect</h3>
                 <ul className="flex gap-6">
                   {Socials.map((social) => {
                     return (
                       <li key={social.title}>
-                        <a href={social.href} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {social.icon}
                         </a>
                       </li>
-                    )
+                    );
                   })}
-              </ul>
+                </ul>
               </div>
             </motion.aside>
           )}
