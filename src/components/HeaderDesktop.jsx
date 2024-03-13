@@ -19,11 +19,11 @@ const HeaderDesktop = (props) => {
         <a href="#about" className="hover:underline underline-offset-8">
           About
         </a>
-        <a href="#skills" className="hover:underline underline-offset-8">
-          Skills
-        </a>
         <a href="#projects" className="hover:underline underline-offset-8">
           Projects
+        </a>
+        <a href="#skills" className="hover:underline underline-offset-8">
+          Skills
         </a>
         <a
           href="#contact"

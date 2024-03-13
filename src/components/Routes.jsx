@@ -14,14 +14,14 @@ const Routes = [
     icon: <FontAwesomeIcon icon={faAddressCard} className="mr-4" />,
   },
   {
-    title: "Skills",
-    href: "#skills",
-    icon: <FontAwesomeIcon icon={faToolbox} className="mr-4" />,
-  },
-  {
     title: "Projects",
     href: "#projects",
     icon: <FontAwesomeIcon icon={faFlask} className="mr-4" />,
+  },
+  {
+    title: "Skills",
+    href: "#skills",
+    icon: <FontAwesomeIcon icon={faToolbox} className="mr-4" />,
   },
   {
     title: "Contact",

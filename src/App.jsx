@@ -16,8 +16,8 @@ const App = () => {
       <main className="flex flex-col items-center mx-auto h-dvh">
         <Home />
         <About />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
       </main>
       <Footer />
