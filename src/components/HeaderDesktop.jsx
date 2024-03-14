@@ -12,7 +12,7 @@ const HeaderDesktop = (props) => {
       id="header-desktop"
       className="hidden md:flex md:justify-between md:items-center p-4"
     >
-      <div id="left-nav" className="flex items-center gap-6 lg:text-xl">
+      <div id="left-nav" className="flex items-center gap-6 text-lg">
       <a href="#">
         <img src="assets/favicon-1.png" alt="icon" className="w-10" />
       </a>
@@ -33,7 +33,7 @@ const HeaderDesktop = (props) => {
         </a>
       </div>
       <div id="right-nav" className="flex items-center gap-8">
-        <div id="social-icons" className="flex items-center gap-4 text-xl">
+        <div id="social-icons" className="flex items-center gap-6 text-xl">
           <a
             href="mailto:zachmk11@gmail.com"
             target="_blank"
