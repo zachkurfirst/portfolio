@@ -14,7 +14,7 @@
   }
   /* primary button */
   .btn-primary {
-    @apply bg-emerald-600 border border-emerald-600 hover:bg-emerald-700 dark:hover:border-emerald-50 text-sky-50;
+    @apply bg-emerald-600 border border-emerald-600 hover:bg-emerald-700 hover:border-emerald-700 text-sky-50;
   }
   /* secondary button */
   .btn-secondary {

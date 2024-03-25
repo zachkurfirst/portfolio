@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiagramProject, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDiagramProject,
+  faArrowUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = (props) => {
   // Projects is an array, create state and set useState to empty array
@@ -27,33 +30,48 @@ const Projects = (props) => {
   return (
     <section id="projects" className="md:max-w-screen-lg mx-6">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-sky-950 dark:text-sky-100 text-center mt-24 mb-8">
-      <FontAwesomeIcon icon={faDiagramProject} className="mr-2"/>Projects
+        <FontAwesomeIcon icon={faDiagramProject} className="mr-2" />
+        Projects
       </h2>
       {projects && (
-        <div id="projects-container" className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div
+          id="projects-container"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-8"
+        >
           {projects.map((project, idx) => {
             return (
-              <div id="project-card" key={idx} className="rounded-lg overflow-hidden shadow-2xl hover:-translate-y-2 delay-75 duration-300 z-0 dark:bg-sky-900">
+              <div
+                id="project-card"
+                key={idx}
+                className="rounded-lg overflow-hidden shadow-2xl hover:-translate-y-2 delay-75 duration-300 z-0 dark:bg-sky-900"
+              >
                 <img
                   src={project.image}
                   alt={project.name}
                   className="aspect-16/9"
                 />
-                <div id="project-contents" className="pt-4 px-6 pb-10">
+                <div id="project-contents" className="flex flex-col justify-evenly py-4 px-6">
                   <h3 className="text-2xl font-bold text-sky-950 dark:text-sky-100">
                     {project.name}
                   </h3>
                   <p className="text-sky-950 dark:text-sky-100 mt-2 mb-6">
                     {project.description}
                   </p>
-                  <div id="button-container" className="text-xs lg:text-base mb-2">
+                  <div
+                    id="button-container"
+                    className="text-xs lg:text-base mb-2"
+                  >
                     <a
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary px-4 md:px-6 mr-2 sm:mr-4"
                     >
-                      Visit app<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
+                      Visit app
+                      <FontAwesomeIcon
+                        icon={faArrowUpRightFromSquare}
+                        className="ml-2"
+                      />
                     </a>
                     <a
                       href={project.git}
@@ -61,9 +79,18 @@ const Projects = (props) => {
                       rel="noopener noreferrer"
                       className="btn btn-secondary px-4 md:px-6"
                     >
-                      View repo<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2"/>
+                      View repo
+                      <FontAwesomeIcon
+                        icon={faArrowUpRightFromSquare}
+                        className="ml-2"
+                      />
                     </a>
                   </div>
+                  <ul id="tools-container" className="flex flex-wrap justify-start gap-1 md:gap-2 my-8">
+                    {project.tools.map((tool, idx) => {
+                      return <li key={idx} className="bg-sky-800 dark:bg-sky-700 text-sky-200 rounded-full p-2 text-xs">#{tool}</li>;
+                    })}
+                  </ul>
                 </div>
               </div>
             );
