@@ -88,7 +88,7 @@ const Projects = (props) => {
                   </div>
                   <ul id="tools-container" className="flex flex-wrap justify-start gap-1 md:gap-2 my-8">
                     {project.tools.map((tool, idx) => {
-                      return <li key={idx} className="bg-sky-800 dark:bg-sky-700 text-sky-200 rounded-full p-2 text-xs">#{tool}</li>;
+                      return <li key={idx} className="bg-sky-800 dark:bg-sky-700 text-sky-100 rounded-full p-2 text-xs">#{tool}</li>;
                     })}
                   </ul>
                 </div>

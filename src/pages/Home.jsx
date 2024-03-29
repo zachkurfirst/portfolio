@@ -12,11 +12,11 @@ const Home = (props) => {
         My name is Zach Kurfirst, and I&rsquo;m a full-stack software engineer. Welcome to my corner of the web.
       </h2>
       <div className="flex flex-col sm:flex-row justify-center gap-2 w-3/4 text-xl">
-        <a href="#projects" className="btn-lg btn-primary w-full sm:w-fit px-8">
+        <a href="#projects" className="btn-lg btn-primary w-full sm:w-fit">
         <FontAwesomeIcon icon={faFlask} className="mr-2"/>
         Projects
         </a>
-        <a href="#contact" className="btn-lg btn-secondary w-full sm:w-fit px-8">
+        <a href="#contact" className="btn-lg btn-secondary w-full sm:w-fit">
         <FontAwesomeIcon icon={faComment} className="mr-2"/>
           Get in touch
         </a>
