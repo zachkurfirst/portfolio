@@ -42,7 +42,6 @@ const About = (props) => {
           <div id="about-text" className="mx-8 sm:mx-0 md:mr-6 lg:mr-0 max-w-lg">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center md:text-left mb-6 sm:mb-4"><FontAwesomeIcon icon={faAddressCard} className="mr-4"/>About Me</h2>
             <p className="mt-4">{about.bio}</p>
-            <p className="mt-4">{about.background}</p>
             <p className="mt-4">{about.wrap}</p>
           </div>
         </div>

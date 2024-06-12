@@ -9,7 +9,7 @@ const Home = (props) => {
         Hello there!
       </h1>
       <h2 className="text-xl font-semibold sm:text-2xl max-w-screen-md mx-6 text-sky-950 dark:text-sky-100 mb-6">
-        My name is Zach Kurfirst, and I&rsquo;m a full-stack software engineer. Welcome to my corner of the web.
+        My name is Zach Kurfirst, welcome to my corner of the web.
       </h2>
       <div className="flex flex-col sm:flex-row justify-center gap-2 w-3/4 text-xl">
         <a href="#projects" className="btn-lg btn-primary w-full sm:w-fit">
