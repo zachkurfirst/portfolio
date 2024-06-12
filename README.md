@@ -1,8 +1,9 @@
 # My Portfolio
 
-Welcome to version 1 of my portfolio!
+Welcome to my portfolio!
 
-My name is Zach Kurfirst, and I'm a technical marketer turned software engineer living in New York City. I recently graduated from General Assembly's Software Engineering Immerseive Bootcamp.
+My name is Zach Kurfirst. I'm a customer-centric software engineer with 8 years of experience identifying and implementing technical solutions for marketing teams. Graduate of General Assembly's Software Engineering Immersive program, where I learned a diverse range of programming languages and frameworks, including JavaScript, Python, React, Express, and Django.
+
 
 ### 👨‍💻 <a href="https://zachkurfirst.netlify.app/" target="_blank" rel="noopener noreferrer">My Portfolio</a>
 
@@ -12,12 +13,3 @@ My name is Zach Kurfirst, and I'm a technical marketer turned software engineer 
 - JavaScript
 - Tailwind CSS
 - Git
-
-## ❄️ What's Next
-
-- Improve anchor menu accuracy
-- Add skills section (frontend and backend)
-- Mobile responsiveness (especially nav bar)
-- More info to about section to give it more personality
-- Hero section needs a little more - maybe a background image?
-- More projects coming soon!
